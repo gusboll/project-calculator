@@ -8,7 +8,60 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+
+    <div class="header">
+        <h1>Calculator</h1>
+        <div class="calcOptions">
+            <button class="calculator">Calculator</button>
+            <button class="calculatorInverse">Inverse Calculator</button>
+        </div>
+    </div>
+
+    <div class="middle">
+        <div class="calculatorLayout">
+            <input class="userInput" value="0">
+            <div class="underInput">
+            <div class="leftPart">
+                <div class="first">
+                    <button class="seven" id="btn7">7</button>
+                    <button class="eight" id="btn8">8</button>
+                    <button class="nine" id="btn9">9</button>
+                    <button class="clearEntry" id="btnCE">CE</button>
+                </div>
+                <div class="second">
+                    <button class="four" id="btn4">4</button>
+                    <button class="five" id="btn5">5</button>
+                    <button class="six" id="btn6">6</button>
+                    <button class="division" id="btnDivision">/</button>
+                </div>
+                <div class="third">
+                    <button class="one" id="btn1">1</button>
+                    <button class="two" id="btn2">2</button>
+                    <button class="three" id="btn3">3</button>
+                    <button class="minus" id="btnMinus">-</button>
+                </div>
+                <div class="fourth">
+                    <button class="zero" id="btn0">0</button>
+                    <button class="dot" id="btnDot">.</button>
+                    <button class="equals" id="btnEquals">=</button>
+                </div>
+            </div>
+            <div class="rightPart">
+                <button class="clear" id="btnClear">C</button>
+                <button class="multiply" id="btnMultiply">*</button>
+                <button class="addition" id="btnAddition">+</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright @ 2025 <a href="https://github.com/gusboll">Gusboll</a></p>
+        <p>The Odin Project</p>
+    </div>
+            
     <!-- title on the page saying 'calculator'
+     
      give two options of calculator
         normal
         inverse
@@ -23,13 +76,13 @@
     function operate that takes an operator and two numbers and then calls the answer for the operator and those numbers
      
     extras
-        numbers and . should be a color
-        every other function like / * - + = should be different colors from one another
+        numbers and . should be a color ------------ OK
+        every other function like / * - + = should be different colors from one another ---------- OK
         maybe display the result without the user touching the =?
 
 
 
-     in the footer, copyright, credits and link to github
+     in the footer, copyright, credits and link to github ---------- OK
 
 
      obs.: do not use `eval` or `new`;

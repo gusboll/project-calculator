@@ -1,0 +1,117 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header, .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    padding: 15px 15px 30px;
+}
+
+.footer {
+    margin: 50px 0 15px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculatorLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 500px;
+    border: 5px solid black;
+    background: lightslategray;
+    gap: 1px;
+    align-content: stretch;
+}
+
+.userInput {
+    width: 90%;
+    height: 10%;
+    margin: 5px 0;
+    text-align: right;
+    font-size: 25px;
+}
+
+.underInput {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    width: 350px;
+    height: 444px;
+}
+
+.leftPart, .rightPart {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rightPart {
+    align-items: center;
+    padding: 0;
+}
+
+.first, .second, .third, .fourth {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.seven, .eight, .nine, .clearEntry, .clear,
+.four, .five, .six, .division, .multiply,
+.one, .two, .three, .minus, .dot,
+.equals, .addition {
+    width: 60px;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    line-height: 106px;
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.zero {
+    width: 125px;
+    line-height: 100px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.addition {
+    height: 217px;
+    line-height: 211px;
+    background-color: green;
+}
+
+.division, .multiply, .minus, .dot, .equals {
+    background-color: lightgray;
+}
+
+.clearEntry {
+    background-color: lightyellow;
+}
+
+.clear {
+    background-color: red;
+}
+
+.calculatorInverse.active {
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+}
